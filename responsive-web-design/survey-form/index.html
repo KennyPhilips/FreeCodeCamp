@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take the time to help us get better!</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Enter your name: <input type="text" id="name" name="name" placeholder="What is your name?" required /></label>
+            <label id="email-label" for="email">Enter your email: </label><input type="email" id="email" name="email" placeholder="What is your email?" required /></label>
+            <label id="number-label" for="number">Enter a number between 0 and 100: </label><input type="number" id="number" name="nubmer" min="0" max="100" placeholder="Type a number between 0 and 100"/></label>
+        </fieldset>
+        <fieldset>
+            <label id="dropdown-label for="dropdown">What is your choice?
+                <select id="dropdown" name="dropdown">
+                    <option value="1">a</option>
+                    <option value="2">b</option>
+                </select>
+            </label>    
+        </fieldset>
+        <fieldset class="radio">
+            <legend>Radio choice (required): </legend>
+            <label for="choice-1"><input id="choice-1" class="inline" type="radio" value="choice-1" name="radio-first-choice" checked/>choice 1</label>
+            <label for="choice-2"><input id="choice-2" class="inline" type="radio" value="choice-2" name="radio-first-choice" />choice 2</label>
+        </fieldset>
+        <fieldset class="radio">
+            <legend>Second radio choice (required): </legend>
+            <label for="choice-3"><input id="choice-3" class="inline" type="radio" value="choice-3" name="radio-second-choice" checked/> choice 1</label>
+            <label for="choice-4"><input id="choice-4" class="inline" type="radio" value="choice-4" name="radio-second-choice" /> choice 2</label>
+        </fieldset>
+        <fieldset>
+            <label for="check-first"><input type="checkbox" class="inline" name="check-first" value="check-first" id="check-first"> checkbox first choice</label>
+            <label for="check-second"><input type="checkbox" class="inline" name="check-second" value="check-second" id="check-second"> checkbox second choice</label>
+            <label for="check-third"><input type="checkbox" class="inline" name="check-third" value="check-third" id="check-second"> checkbox third choice</label>
+        </fieldset>
+        <fieldset>
+            <label for="comments">Do you have any comments?
+                <textarea id="comments" rows="5">Additional comments</textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit" />
+    </form>
+
+</body>
+</html>
