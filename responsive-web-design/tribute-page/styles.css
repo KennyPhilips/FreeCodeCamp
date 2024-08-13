@@ -1,0 +1,46 @@
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #c9dabf;
+    color: #5f6f65;
+}
+
+#img-div {
+    text-align: center;
+    background-color: #9ca986;
+    padding: 24px 8px;
+}
+
+#img-caption {
+    padding-top: 8px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+    text-align: left;
+}
+
+li {
+    padding: 8px 0px;
+}
+
+#tribute-info > p {
+    max-width: 600px;
+    border: 1px solid #808d7c;
+    margin: 8px auto 8px auto;
+    padding: 8px;
+}
+
+h1 {
+    font-size: 64px;
+}
